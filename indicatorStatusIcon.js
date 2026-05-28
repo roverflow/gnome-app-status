@@ -43,6 +43,8 @@ class IndicatorBaseStatusIcon extends St.Widget {
             accessible_name: nameText ?? '',
             accessible_role: Atk.Role.MENU,
             style_class: 'appstatus-icon',
+            y_expand: true,
+            y_align: Clutter.ActorAlign.CENTER,
         });
 
         const settings = SettingsManager.getDefaultGSettings();
@@ -50,7 +52,10 @@ class IndicatorBaseStatusIcon extends St.Widget {
         this.connect('notify::hover', () => this._onHoverChanged());
         this.connect('destroy', () => this._onDestroy());
 
-        this._box = new St.BoxLayout({style_class: 'appstatus-icon-box'});
+        this._box = new St.BoxLayout({
+            style_class: 'appstatus-icon-box',
+            y_align: Clutter.ActorAlign.CENTER,
+        });
         this.add_child(this._box);
 
         this.menu = new PopupMenu.PopupMenu(this, 0.5, St.Side.TOP);

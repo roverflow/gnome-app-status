@@ -12,11 +12,17 @@ class AppStatusIndicatorTray extends PanelMenu.Button {
     _init() {
         super._init(0.5, 'App Status Tray', true);
 
+        this.remove_style_class_name('panel-button');
+        this.reactive = false;
+        this.track_hover = false;
+
         this._icons = new Map();
 
         this._box = new St.BoxLayout({
             style_class: 'appstatus-tray-box',
             x_align: Clutter.ActorAlign.START,
+            y_expand: true,
+            y_align: Clutter.ActorAlign.CENTER,
         });
         this.add_child(this._box);
 
