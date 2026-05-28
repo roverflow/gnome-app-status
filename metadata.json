@@ -1,0 +1,16 @@
+{
+    "shell-version": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50"
+    ],
+    "gettext-domain": "gnome-app-status",
+    "settings-schema": "org.gnome.shell.extensions.appstatus",
+    "uuid": "gnome-app-status@roverflow",
+    "name": "App Status Icons",
+    "description": "Tightly grouped AppIndicator and KStatusNotifierItem icons with clean, native GNOME styling",
+    "url": "https://github.com/roverflow/gnome-app-status"
+}

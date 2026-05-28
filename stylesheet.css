@@ -1,0 +1,73 @@
+/* IndicatorTray — the single panel container */
+.appstatus-tray {
+    -natural-hpadding: 4px;
+    -minimum-hpadding: 2px;
+}
+
+.appstatus-tray-box {
+    spacing: 4px;
+}
+
+/* Individual icon widgets inside the tray */
+.appstatus-icon {
+    padding: 0 2px;
+    border-radius: 6px;
+    transition-duration: 150ms;
+}
+
+.appstatus-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.appstatus-icon:active,
+.appstatus-icon:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.appstatus-icon-box {
+    padding: 4px 2px;
+}
+
+/* Legacy tray icon specific */
+.appstatus-tray-icon {
+    padding: 0 2px;
+}
+
+/* Popup menus — Adwaita-native styling */
+.appstatus-menu {
+    margin-bottom: 1.5em;
+}
+
+.appstatus-menu .popup-menu-content {
+    padding: 6px 0;
+    border-radius: 12px;
+}
+
+.appstatus-menu .popup-menu-item {
+    min-height: 36px;
+    padding: 0 12px;
+    spacing: 8px;
+}
+
+.appstatus-menu .popup-menu-item:hover,
+.appstatus-menu .popup-menu-item:focus {
+    transition-duration: 75ms;
+}
+
+.appstatus-menu .popup-menu-item:checked {
+    font-weight: bold;
+}
+
+.appstatus-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 1px;
+    margin: 4px 12px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.appstatus-menu .popup-sub-menu {
+    background-color: transparent;
+}
+
+.appstatus-menu .popup-menu-item .popup-menu-icon {
+    icon-size: 16px;
+}
