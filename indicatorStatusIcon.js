@@ -43,6 +43,7 @@ class IndicatorBaseStatusIcon extends St.Widget {
             accessible_name: nameText ?? '',
             accessible_role: Atk.Role.MENU,
             style_class: 'appstatus-icon',
+            x_align: Clutter.ActorAlign.CENTER,
             y_expand: true,
             y_align: Clutter.ActorAlign.CENTER,
         });
@@ -54,6 +55,7 @@ class IndicatorBaseStatusIcon extends St.Widget {
 
         this._box = new St.BoxLayout({
             style_class: 'appstatus-icon-box',
+            x_align: Clutter.ActorAlign.CENTER,
             y_align: Clutter.ActorAlign.CENTER,
         });
         this.add_child(this._box);
